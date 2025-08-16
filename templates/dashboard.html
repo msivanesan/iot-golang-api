@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css  " />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Dashboard</h1>
+      <div id="time"></div>
+      <div class="btn"><button onclick="logout()">Logout</button></div>
+    </div>
+    <div style="width: 98%">
+      <h2>Sensor Thresholds</h2>
+      <div class="thoshold">
+        <label for="tempThresh">Temperature: </label>
+        <input type="number" id="tempThresh" />
+        <label for="humThresh">Humidity: </label>
+        <input type="number" id="humThresh" />
+        <label for="soundThresh">Sound: </label>
+        <input type="number" id="soundThresh" />
+        <button onclick="updateThresholds()">Update Thresholds</button>
+        
+      </div>
+    </div>
+    <div class="top-div">
+      <div>
+        <h2>Temparature and humidity</h2>
+        <div class="chart" id="chart1"></div>
+      </div>
+      <div>
+        <h2>Sound</h2>
+        <div class="chart" id="chart2"></div>
+      </div>
+    </div>
+
+    <div class="thoshold">
+      <a href="/static/temp_humidity.csv">Temparature Data</a>
+      <a href="/static/sound_level.csv">Sound Data</a>
+      <a href="/contacts">Add Contacts</a>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

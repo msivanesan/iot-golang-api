@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container-contact">
+      <div id="header">
+        <h1>Dashboard</h1>
+        <div id="time"></div>
+        <div class="btn"><button onclick="logout()">Logout</button></div>
+      </div>
+      <h2>Add Contact</h2>
+      <input type="text" id="name" placeholder="Name" />
+      <input type="email" id="email" placeholder="Email" />
+      <input type="text" id="phone" placeholder="Phone" />
+      <button onclick="addContact()">Add</button>
+
+      <h2>Contact List</h2>
+      <div id="contactsTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Delete ?</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
