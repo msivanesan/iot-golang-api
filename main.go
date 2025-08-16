@@ -8,6 +8,10 @@ import (
 )
 
 func main() {
+	port := os.Getenv("PORT") // Render provides this
+	if port == "" {
+		port = "8000" // fallback for local run
+	}
 	// Ensure static folder exists
 	if _, err := os.Stat("static"); os.IsNotExist(err) {
 		os.Mkdir("static", 0755)
@@ -28,5 +32,5 @@ func main() {
 	http.HandleFunc("/dashboard", dashboard)
 	http.HandleFunc("/contacts/delete", handleDeleteContact)
 	fmt.Println("Server started at http://localhost:8000")
-	log.Fatal(http.ListenAndServe(":8000", nil))
+	log.Fatal(http.ListenAndServe("0.0.0.0:"+port, nil))
 }
