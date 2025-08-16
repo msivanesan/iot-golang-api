@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -31,6 +30,5 @@ func main() {
 	http.HandleFunc("/contacts/list", handleGetContacts)
 	http.HandleFunc("/dashboard", dashboard)
 	http.HandleFunc("/contacts/delete", handleDeleteContact)
-	fmt.Println("Server started at http://localhost:8000")
 	log.Fatal(http.ListenAndServe("0.0.0.0:"+port, nil))
 }
