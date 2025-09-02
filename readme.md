@@ -35,12 +35,12 @@
 
 
 ## Set Up and run this project
-  1 install go lang in your system.
-  2 clone this repositry into your system.
-  3 navigate to "notify.go" there enter your email and app password(which will be generated from your mail account).
-  4 in the same file change the fast2sms key to your key.
-  5 the run the go project running this command "go run ."
-  6 now in find the arduino folder there you  can get the skech for the iot device. 
-  7 on that skech replace the wifi details such as ssid,pasword.
-  8 also replace the url end point.
-  9 the user name and password of the login dashbord will relaced in "credential.json" file.
+  - install go lang in your system.
+  - clone this repositry into your system.
+  - navigate to "notify.go" there enter your email and app password(which will be generated from your mail account).
+  - In the same file change the fast2sms key to your key.
+  - The run the go project running this command "go run ."
+  - Now in find the arduino folder there you  can get the skech for the iot device.
+  - On that skech replace the wifi details such as ssid,pasword.
+  - Also replace the url end point.
+  - The user name and password of the login dashbord will relaced in "credential.json" file.
