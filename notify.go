@@ -12,8 +12,8 @@ import (
 
 func sendEmail(to []string, subject, body string) {
 	go func() {
-		from := "tvmkkgac@gmail.com"      // sender
-		password := "amgq gajl mwpx qhcj" // app password or real password
+		from := ""      // sender
+		password := "" // app password or real password
 
 		// SMTP server configuration
 		smtpHost := "smtp.gmail.com"
@@ -38,7 +38,7 @@ func sendEmail(to []string, subject, body string) {
 	}()
 }
 
-const fast2smsAPIKey = "mh2GfmR88JLqmNRImrbsUHa0Tsha2D4LluDrln2tR6SHD54K8BJZ4OkiuLuW"
+const fast2smsAPIKey = ""
 
 func sendSMSAsync(numbers []string, message string) {
 	go func() {
